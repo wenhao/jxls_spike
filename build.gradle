@@ -1,0 +1,18 @@
+plugins {
+    id 'java-library'
+    id 'idea'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'com.google.guava:guava:28.1-jre'
+    implementation 'org.jxls:jxls:2.9.0'
+    implementation 'org.jxls:jxls-poi:2.9.0'
+    implementation 'org.jxls:jxls-reader:2.0.6'
+//    implementation 'org.apache.poi:poi:5.0.0'
+
+    testImplementation 'junit:junit:4.12'
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<workbook>
+    <worksheet idx="0">
+        <loop startRow="2" endRow="2" items="checkItems" var="checkItem" varType="com.github.wenhao.domain.CheckItem">
+            <section startRow="2" endRow="2">
+                <mapping cell="A4">checkItem.category</mapping>
+                <mapping cell="B4">checkItem.item</mapping>
+                <mapping cell="C4">checkItem.orderNo</mapping>
+                <mapping cell="D4">checkItem.description</mapping>
+                <mapping cell="E4">checkItem.type</mapping>
+                <mapping cell="F4">checkItem.score</mapping>
+                <mapping cell="G4">checkItem.capability</mapping>
+                <mapping cell="H4">checkItem.level</mapping>
+                <mapping cell="J4">checkItem.remark</mapping>
+            </section>
+            <loopbreakcondition>
+                <rowcheck offset="0">
+                    <cellcheck offset="0" />
+                </rowcheck>
+            </loopbreakcondition>
+        </loop>
+    </worksheet>
+</workbook>
